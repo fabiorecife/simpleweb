@@ -1,3 +1,4 @@
-#Simple Web
+Simple Web
+==========
 
-Java app with simple web application with restlet (restlet.org)
+Java simple web application with restlet framework (restlet.org)
