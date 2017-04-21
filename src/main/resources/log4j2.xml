@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!--
+        #TRACE,
+        #DEBUG,
+        #INFO,
+        #WARN,
+        #ERROR and
+        #FATAL
+     -->
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <Logger name="simpleweb" level="info" />
+
+        <!--
+        <Logger name="simpleweb"  level="trace" additivity="false">
+          <AppenderRef ref="Console"/>
+        </Logger>
+         -->
+    </Loggers>
+</Configuration>
